@@ -4,13 +4,14 @@ $(function() {
 	var log ="";
 	var result = "";
 	var input = "";
-	var testNumLength = function(value) {
-		if (value.length > 9) {
+	var testNumLength = function() {
+		if (input.length > 9) {
  			log = "";
  			input = "";
  			result = "";
 			$("#history").html("Error");
 			totaldiv.text("Error");
+			console.log('hre');
 		}
 	}
 	var round = function(value) {
@@ -183,62 +184,71 @@ $(function() {
 	$("#one").click(function() {
 		log += "1";
 		input += "1";
-		testNumLength(input);
 		totaldiv.text(input);
 		$('#history').html(log);
+		testNumLength();
 	});
 	$("#two").click(function(){
 		log += "2";
 		input += "2";
 		totaldiv.text(input);
 		$('#history').html(log);
+		testNumLength();
 	});
 	$("#three").click(function(){
 		log += '3';
 		input += "3";
 		totaldiv.text(input);
 		$('#history').html(log);
+		testNumLength();
 	});
 	$("#four").click(function(){
 		log += "4";
 		input += "4";
 		totaldiv.text(input);
 		$('#history').html(log);
+		testNumLength();
 	});
 	$("#five").click(function(){
 		log += "5";
 		input += "5";
 		totaldiv.text(input);
 		$('#history').html(log);
+		testNumLength();
 	});
 	$("#six").click(function(){
 		log += "6";
 		input += "6";
 		totaldiv.text(input);
 		$('#history').html(log);
+		testNumLength();
 	});
 	$("#seven").click(function(){
 		log += "7";
 		input += "7";
 		totaldiv.text(input);
 		$('#history').html(log);
+		testNumLength();
 	});
 	$("#eight").click(function(){
 		log += "8";
 		input += "8";
 		totaldiv.text(input);
 		$('#history').html(log);
+		testNumLength();
 	});
 	$("#nine").click(function(){
 		log += "9";
 		input += "9";
 		totaldiv.text(input);
 		$('#history').html(log);
+		testNumLength();
 	});
 	$("#zero").click(function(){
 		log += "0";
 		input += "0";
 		totaldiv.text(input);
 		$('#history').html(log);
+		testNumLength();
 	});
 });
